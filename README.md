@@ -8,7 +8,11 @@
 час технічного обслуговування тощо. Подивися демовідео роботи таймера.
 
 
-https://github.com/NelliDiachkina/goit-js-hw-10/assets/99911692/f57a91a6-4f74-4bfc-a57f-270ca7c30b94
+
+
+https://github.com/NelliDiachkina/goit-js-hw-10/assets/99911692/d93e19f5-b528-49d3-b333-370216d18b57
+
+
 
 
 
@@ -194,7 +198,11 @@ import 'izitoast/dist/css/iziToast.min.css';
 демовідео роботи генератора промісів.
 
 
-https://github.com/NelliDiachkina/goit-js-hw-10/assets/99911692/2ba42e34-ea51-467e-a1ef-4ffb9367f53f
+
+
+https://github.com/NelliDiachkina/goit-js-hw-10/assets/99911692/f692f0b9-eac8-4d57-aa1a-f02cb3129705
+
+
 
 
 
