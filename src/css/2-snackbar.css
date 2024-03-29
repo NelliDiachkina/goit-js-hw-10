@@ -1,0 +1,38 @@
+.form {
+  max-width: 360px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 20px;
+}
+
+.form label:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form input {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+}
+
+fieldset {
+  border-radius: 4px;
+  border: 1px solid #808080;
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  padding: 8px;
+}
+
+fieldset legend {
+  margin-left: 20px;
+  margin-bottom: 14px;
+}
