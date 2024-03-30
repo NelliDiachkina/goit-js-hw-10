@@ -70,19 +70,24 @@ function onClickStartTimer() {
 function updateTimer() {
   const currentTime = Date.now();
   const userSelectedTime = userSelectedDate.getTime();
-  const ms = userSelectedTime - currentTime;
+  const timeLeft = userSelectedTime - currentTime;
 
-  const { days, hours, minutes, seconds } = convertMs(ms);
+  updateDisplay(timeLeft);
+
+  if (timeLeft <= 0) {
+    clearInterval(timerIntervalId);
+    updateDisplay(0);
+    inputDateTimePickerEl.removeAttribute('disabled');
+  }
+}
+
+function updateDisplay(time) {
+  const { days, hours, minutes, seconds } = convertMs(time);
 
   timerElements.days.textContent = addLeadingZero(days);
   timerElements.hours.textContent = addLeadingZero(hours);
   timerElements.minutes.textContent = addLeadingZero(minutes);
   timerElements.seconds.textContent = addLeadingZero(seconds);
-
-  if (!days && !hours && !minutes && !seconds) {
-    clearInterval(timerIntervalId);
-    inputDateTimePickerEl.removeAttribute('disabled');
-  }
 }
 
 function addLeadingZero(value) {
